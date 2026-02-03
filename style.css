@@ -367,6 +367,9 @@ ul {
 }
 .notion-content {
   padding: 15px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   position: relative;
 }
 .notion-icon {
@@ -615,4 +618,33 @@ ul {
 .floating-menu-container:hover .main-floating-btn {
   transform: scale(1.05);
   background: var(--ocean-dark);
+}
+
+.github-card-link {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 0;
+  width: 100%;
+
+  background-color: #f7f7f5;
+  color: #37352f;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.github-card-link:hover {
+  background-color: #e6e6e4;
+  border-color: #d0d0d0;
+  transform: translateY(-2px);
+}
+
+.icon-gh {
+  font-size: 1.1rem;
 }
